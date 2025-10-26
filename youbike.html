@@ -22,7 +22,7 @@
   <script src="Youbike.js"></script>
 </head>
 <body>
-    <form id="searchForm">
+    <div class="searchBlock">
       <div>
         <h1>YouBike 即時資料查詢</h1>
         <small class="source">
@@ -38,7 +38,7 @@
       <div>
         <input 
           type="text" 
-          class="searchBlock" 
+          class="searchSection" 
           id="searchKeyword" 
           placeholder="可輸入關鍵字搜尋路名，例如：八德路"
           autocomplete="off"
@@ -48,7 +48,7 @@
       <div>
         <button class="btn btnSuccess">搜尋</button>
       </div>
-    </form>
+    
 
     <div id="loadingBar" class="loading">
       <div class="progress"></div>
@@ -57,5 +57,6 @@
     <hr />
 
     <ul class="siteList listGroup"></ul>
+  </div>
 </body>
 </html>
