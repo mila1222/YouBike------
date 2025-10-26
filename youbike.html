@@ -22,12 +22,9 @@
   <script src="Youbike.js"></script>
 </head>
 <body>
-  <main>
     <form id="searchForm">
       <div>
-        <label class="webTitle">
-          YouBike 即時資料查詢
-        </label>
+        <h1>YouBike 即時資料查詢</h1>
         <small class="source">
           資料來源：
           <a href="https://data.gov.tw/dataset/137993" target="_blank" style="text-decoration: underline;">
@@ -39,7 +36,13 @@
 			<small>括號內代表目前可租借數量</small>
 
       <div>
-        <input type="text" class="searchBlock" id="searchKeyword" placeholder="可輸入關鍵字搜尋路名，例如：八德路">
+        <input 
+          type="text" 
+          class="searchBlock" 
+          id="searchKeyword" 
+          placeholder="可輸入關鍵字搜尋路名，例如：八德路"
+          autocomplete="off"
+        />
       </div>
 
       <div>
@@ -47,9 +50,12 @@
       </div>
     </form>
 
+    <div id="loadingBar" class="loading">
+      <div class="progress"></div>
+    </div>
+
     <hr />
 
     <ul class="siteList listGroup"></ul>
-  </main>
 </body>
 </html>
