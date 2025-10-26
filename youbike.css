@@ -14,8 +14,6 @@
 	font-size: 24px;
 }
 
-
-
 .btn {
 	display: inline-block;
 	font-weight: 400;
@@ -31,4 +29,11 @@
 	color: white;
 	background-color:#198754;
 	border-color: #198754;
+}
+
+.empty {
+	color: red;
+	font-size: 28px;
+	text-align: center;
+	padding: 10px;
 }
