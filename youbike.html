@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouBike 即時資料查詢</title>
+	<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="youbike.css">
+  <script src="Youbike.js"></script>
+</head>
+<body>
+  <main>
+    <form id="searchForm">
+      <div>
+        <label class="webTitle">
+          YouBike 即時資料查詢
+        </label>
+        <small class="source">
+          資料來源：
+          <a href="https://data.gov.tw/dataset/137993" target="_blank" style="text-decoration: underline;">
+            政府資料開放平台
+          </a>
+        </small>
+      </div>
+      
+			<small>括號內代表目前可租借數量</small>
+
+      <div>
+        <input type="text" class="searchBlock" id="searchKeyword" placeholder="可輸入關鍵字搜尋路名，例如：八德路">
+      </div>
+
+      <div>
+        <button class="btn btnSuccess">搜尋</button>
+      </div>
+    </form>
+
+    <hr />
+
+    <ul class="siteList listGroup"></ul>
+  </main>
+</body>
+</html>
